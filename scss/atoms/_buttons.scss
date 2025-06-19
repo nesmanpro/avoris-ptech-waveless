@@ -1,0 +1,57 @@
+/* Button */
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 40px;
+    border-radius: 100px;
+    width: max-content;
+    height: max-content;
+    border: none;
+    font-family: var(--font-family--default);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+
+    &__default {
+        color: var(--color--default);
+        background-color: var(--bg--default);
+    }
+
+    &__default:hover {
+        color: var(--color--default-hover);
+        background-color: var(--bg--default-hover);
+    }
+
+    &__default.disabled,
+    &__default:disabled {
+        color: var(--color--default-disabled);
+        background-color: var(--bg--default-disabled);
+    }
+
+    &__primary {
+        color: var(--color--primary);
+        background-color: var(--bg--primary);
+    }
+
+    &__primary:hover {
+        color: var(--color--primary-hover);
+        background-color: var(--bg--primary-hover);
+    }
+
+    &__primary.disabled,
+    &__primary:disabled {
+        color: var(--color--primary-disabled);
+        background-color: var(--bg--primary-disabled);
+    }
+}
+
+/* Home Tablets (large) ----------- */
+@media screen and (max-width: 1023px) {
+    .btn {
+        padding: 10px 30px;
+    }
+
+}

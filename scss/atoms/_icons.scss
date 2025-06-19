@@ -1,0 +1,29 @@
+.navbar {
+    .icon {
+        color: var(--color--icon-navbar);
+
+        &:hover {
+            color: var(--color--icon-navbar);
+        }
+    }
+}
+
+.icon {
+
+    &--primary {
+        color: var(--color--icon-primary);
+
+        &:hover {
+            color: var(--color--icon-primary-hover);
+        }
+    }
+
+    &--default {
+        color: var(--color--icon-default);
+
+        &:hover {
+            color: var(--color--icon-default-hover);
+        }
+    }
+
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Syne:wght@400..800&display=swap');
+
+/* Abstract */
+@import 'abstract/_variables';
+
+/* Base */
+@import 'base/_reset';
+@import 'base/_base';
+
+/* Pages */
+@import 'pages/_main';
+
+/* Layouts */
+
+/* Atoms */
+@import 'atoms/buttons';
+@import 'atoms/icons';
+
+/* Molecules */
+
+/* Organisms */
+@import 'organisms/_footer';
+@import 'organisms/hero';
+@import 'organisms/navbar';

@@ -1,0 +1,39 @@
+footer {
+    height: 180px;
+    width: 100%;
+
+
+    .footer__header-bar {
+        height: 128px;
+        display: flex;
+        justify-content: center;
+        padding: 48px 40px;
+        background-color: var(--bg--footer-light);
+    }
+
+    .footer__bottom-bar {
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        padding: 16px;
+        background-color: var(--bg--footer-dark);
+        color: var(--color-basic--default);
+        font-weight: 700;
+        font-size: 14px;
+    }
+}
+
+
+/* MEDIA QUERIES */
+
+/* Smallest Smartphones ----------- */
+@media screen and (max-width: 1023px) {
+    footer {
+
+        .footer__header-bar {
+            justify-content: left;
+        }
+
+    }
+
+}

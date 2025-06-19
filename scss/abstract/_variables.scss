@@ -1,0 +1,59 @@
+:root {
+    font-family: "Nunito", sans-serif;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --font-family--title: "Syne", sans-serif;
+    --font-family--default: "Nunito", sans-serif;
+
+    --color-title--default: #2F222F;
+
+    --color-basic--default: #622F60;
+    --color-basic--default-hover: #471F45;
+    --color-basic--default-disable: #A0989F;
+
+    --color-basic--primary: #FF8F50;
+    --color-basic--primary-hover: #D67843;
+    --color-basic--primary-disable: #817781;
+
+    --color-background--light: #f7f8fa;
+
+    // buttons
+    --bg--default: #622F60;
+    --bg--default-hover: #471F45;
+    --bg--default-disabled: #A0989F;
+
+    --color--default: #fff;
+    --color--default-hover: #F8F7F8;
+    --color--default-disabled: #635A63;
+
+    --bg--primary: #FF8F50;
+    --bg--primary-hover: #D67843;
+    --bg--primary-disabled: #817781;
+
+    --color--primary: #4E250E;
+    --color--primary-hover: #57290F;
+    --color--primary-disabled: #494149;
+
+    // icons
+
+    --color--icon-navbar: #342E34;
+
+    --color--icon-default: #622F60;
+    --color--icon-default-hover: #471F45;
+    --color--icon-default-disabled: #A0989F;
+
+    --color--icon-primary: #FF8F50;
+    --color--icon-primary-hover: #D67843;
+    --color--icon-primary-disabled: #817781;
+
+
+    // footer
+    --bg--footer-light: #FAF7F5;
+    --bg--footer-dark: #E0D9E0;
+
+    --desktop-width: 1440;
+}
