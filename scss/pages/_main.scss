@@ -56,18 +56,21 @@ main {
 @media screen and (max-width: 850px) {
 
     main {
-        padding-top: 47px;
+        padding-top: 55px;
 
         .main__header {
+            gap: 15px;
 
             h1 {
                 color: var(--color-title--default);
                 font-size: 35.3px;
-                letter-spacing: .7px;
+                letter-spacing: -1px;
+                line-height: .9;
             }
 
             h4 {
                 font-size: 19.5px;
+                line-height: 1.4;
             }
         }
     }

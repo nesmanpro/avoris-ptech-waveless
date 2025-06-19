@@ -121,7 +121,7 @@
 /* Home Tablets(small) ----------- */
 @media screen and (max-width: 850px) {
     .hero {
-        &__carousel__slide .text-container {
+        .carousel__slide .text-container {
             max-width: 350px;
             margin: 0 auto;
         }
@@ -131,7 +131,7 @@
 /* Home Tablets(small) ----------- */
 @media screen and (max-width: 390px) {
     .hero {
-        &__carousel__slide .text-container {
+        .carousel__slide .text-container {
             max-width: 250px;
 
             .title {
