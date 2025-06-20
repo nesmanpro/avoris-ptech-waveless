@@ -8,7 +8,7 @@
   <title>waveless</title>
 </head>
 
-<body style="opacity: 0;">
+<body class="home-page" style="opacity: 0;">
   <header>
     <nav class="navbar navbar--desktop">
       <div class="navbar__logo-wrapper">
@@ -168,12 +168,285 @@
       <h1>Vive tus propias aventuras</h1>
       <h4>Para los que les gusta explorar y conocer mundo sin complejos</h4>
     </div>
+
     <div class="main__content">
-      <aside>
-        filtrar mi busqueda
+      <aside class="search-bar">
+        <div class="search-bar__title">
+          <h4>Filtrar mi búsqueda</h4>
+        </div>
+        <form class="search-bar__form" id="js-search-form">
+          <section class="section">
+            <div type="button" class="section__toggle" aria-expanded="true" aria-controls="avt-content">
+              <span>
+                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.4726 20.3495C16.4302 20.3495 20.4492 16.353 20.4492 11.4229C20.4492 6.49291 16.4302 2.49634 11.4726 2.49634C6.51503 2.49634 2.49609 6.49291 2.49609 11.4229C2.49609 16.353 6.51503 20.3495 11.4726 20.3495Z"
+                    stroke="currentColor" stroke-width="1.2672" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M3.18848 14.8586H5.60524C6.2462 14.8586 6.86091 14.6054 7.31414 14.1547C7.76737 13.704 8.022 13.0927 8.022 12.4553V10.3953C8.022 9.75792 8.27662 9.14663 8.72985 8.69592C9.18308 8.24521 9.79779 7.992 10.4388 7.992C11.0797 7.992 11.6944 7.7388 12.1477 7.28809C12.6009 6.83738 12.8555 6.22609 12.8555 5.58869V2.59485"
+                    stroke="currentColor" stroke-width="1.2672" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M20.4461 11.2827C19.7547 10.9259 18.9879 10.7377 18.2089 10.7334H15.2673C14.6264 10.7334 14.0117 10.9866 13.5584 11.4373C13.1052 11.888 12.8506 12.4993 12.8506 13.1367C12.8506 13.7741 13.1052 14.3854 13.5584 14.8361C14.0117 15.2868 14.6264 15.54 15.2673 15.54C15.7252 15.54 16.1643 15.7209 16.488 16.0428C16.8117 16.3648 16.9936 16.8014 16.9936 17.2567V18.4515"
+                    stroke="currentColor" stroke-width="1.2672" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M10.9144 19.7891C11.0658 19.4494 11.0892 19.0378 10.9141 18.6731C10.7389 18.3085 10.5452 17.7874 10.1461 17.6114C9.74691 17.4354 9.30393 17.4015 8.91458 17.5172C8.52523 17.633 8.2214 17.8888 8.06994 18.2285C7.96175 18.4712 7.74473 18.6539 7.46662 18.7366C7.18852 18.8192 6.8721 18.7951 6.58699 18.6693L5.83877 18.3394"
+                    stroke="currentColor" stroke-width="1.2672" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Destinos
+              </span>
+              <span class="chevron js-chevron">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.28967 6.29185C7.68162 6.68262 7.68162 7.31744 7.28967 7.70821L2.21955 12.763C1.82927 13.1521 1.19776 13.1521 0.80748 12.763L0.710331 12.6661C0.318375 12.2753 0.318375 11.6405 0.710331 11.2498L4.97297 7.00003L0.710331 2.7503C0.318375 2.35953 0.318375 1.72471 0.710331 1.33394L0.807481 1.23709C1.19776 0.847995 1.82927 0.847995 2.21955 1.23709L7.28967 6.29185Z"
+                    fill="currentColor" />
+                </svg>
+
+              </span>
+            </div>
+            <div id="js-aventuras-fields" class="section__content">
+              <label>
+                <input type="checkbox" name="destino[]" value="cairo" />
+                <span class="custom-checkbox"></span>
+                El cairo
+              </label>
+              <label>
+                <input type="checkbox" name="destino[]" value="bali" checked />
+                <span class="custom-checkbox"></span>
+                Bali
+              </label>
+
+            </div>
+          </section>
+          <section class="section">
+            <div type="button" class="section__toggle is-open" aria-expanded="true" aria-controls="avt-content">
+              <span>
+                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2007_86127)">
+                    <path
+                      d="M15.375 6.75C16.4105 6.75 17.25 5.91053 17.25 4.875C17.25 3.83947 16.4105 3 15.375 3C14.3395 3 13.5 3.83947 13.5 4.875C13.5 5.91053 14.3395 6.75 15.375 6.75Z"
+                      stroke="currentColor" stroke-width="1.34" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M0.75 18.75L7.60312 7.11936C7.6693 7.00658 7.76381 6.91306 7.87728 6.84807C7.99075 6.78309 8.11924 6.7489 8.25 6.7489C8.38076 6.7489 8.50925 6.78309 8.62272 6.84807C8.73619 6.91306 8.8307 7.00658 8.89688 7.11936L15.75 18.75H0.75Z"
+                      stroke="currentColor" stroke-width="1.34" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4.72021 12H11.7796" stroke="currentColor" stroke-width="1.34" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M13.7446 15.3478L16.844 10.1175C16.9104 10.0056 17.0048 9.91289 17.1179 9.8485C17.231 9.78411 17.3589 9.75024 17.489 9.75024C17.6191 9.75024 17.747 9.78411 17.8601 9.8485C17.9732 9.91289 18.0676 10.0056 18.134 10.1175L23.2499 18.75H15.7499"
+                      stroke="currentColor" stroke-width="1.34" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2007_86127">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Aventura
+              </span>
+              <span class="chevron js-chevron">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.28967 6.29185C7.68162 6.68262 7.68162 7.31744 7.28967 7.70821L2.21955 12.763C1.82927 13.1521 1.19776 13.1521 0.80748 12.763L0.710331 12.6661C0.318375 12.2753 0.318375 11.6405 0.710331 11.2498L4.97297 7.00003L0.710331 2.7503C0.318375 2.35953 0.318375 1.72471 0.710331 1.33394L0.807481 1.23709C1.19776 0.847995 1.82927 0.847995 2.21955 1.23709L7.28967 6.29185Z"
+                    fill="currentColor" />
+                </svg>
+
+              </span>
+            </div>
+            <div id="js-aventuras-fields" class="section__content">
+              <label>
+                <input type="checkbox" name="aventura[]" value="quads" />
+                <span class="custom-checkbox"></span>
+                Quads
+              </label>
+              <label>
+                <input type="checkbox" name="aventura[]" value="parapente" checked />
+                <span class="custom-checkbox"></span>
+                Parapente
+              </label>
+              <label>
+                <input type="checkbox" name="aventura[]" value="rafting" />
+                <span class="custom-checkbox"></span>
+                Rafting
+              </label>
+              <label>
+                <input type="checkbox" name="aventura[]" value="explora" />
+                <span class="custom-checkbox"></span>
+                Explora
+              </label>
+              <label>
+                <input type="checkbox" name="aventura[]" value="buceo" />
+                <span class="custom-checkbox"></span>
+                Buceo
+              </label>
+              <label>
+                <input type="checkbox" name="aventura[]" value="paracaidas" />
+                <span class="custom-checkbox"></span>
+                Paracaídas
+              </label>
+              <label>
+                <input type="checkbox" name="aventura[]" value="snowboard" />
+                <span class="custom-checkbox"></span>
+                Snowboard
+              </label>
+              <label>
+                <input type="checkbox" name="aventura[]" value="surf" />
+                <span class="custom-checkbox"></span>
+                Surf
+              </label>
+            </div>
+
+            <a href="">Ver 21 más</a>
+          </section>
+          <section class="section">
+            <div type="button" class="section__toggle" aria-expanded="true" aria-controls="avt-content">
+              <span>
+                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12.5283" cy="8.30421" r="1.056" stroke="#342E34" stroke-width="1.056" />
+                  <path
+                    d="M11.5581 4.17981C12.1144 3.69609 12.9423 3.69609 13.4985 4.17981L20.2837 10.0792C20.6379 10.3873 20.8252 10.8457 20.7876 11.3136L20.2134 18.4552C20.1514 19.2229 19.5099 19.8143 18.7397 19.8146H6.31689C5.54665 19.8144 4.90523 19.2229 4.84326 18.4552L4.26904 11.3136C4.23148 10.8457 4.41871 10.3873 4.77295 10.0792L11.5581 4.17981Z"
+                    stroke="currentColor" stroke-width="1.2672" />
+                  <line x1="7.45196" y1="19.8939" x2="7.45196" y2="21.9262" stroke="currentColor" stroke-width="1.2672"
+                    stroke-linecap="round" />
+                  <line x1="17.2562" y1="19.8939" x2="17.2562" y2="21.9262" stroke="currentColor" stroke-width="1.2672"
+                    stroke-linecap="round" />
+                  <path
+                    d="M14.996 19.262V14.7748C14.996 13.6084 14.0504 12.6628 12.884 12.6628H12.2053C11.0388 12.6628 10.0933 13.6084 10.0933 14.7748V19.262"
+                    stroke="currentColor" stroke-width="1.2672" />
+                </svg>
+                Alojamiento
+              </span>
+              <span class="chevron js-chevron">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.28967 6.29185C7.68162 6.68262 7.68162 7.31744 7.28967 7.70821L2.21955 12.763C1.82927 13.1521 1.19776 13.1521 0.80748 12.763L0.710331 12.6661C0.318375 12.2753 0.318375 11.6405 0.710331 11.2498L4.97297 7.00003L0.710331 2.7503C0.318375 2.35953 0.318375 1.72471 0.710331 1.33394L0.807481 1.23709C1.19776 0.847995 1.82927 0.847995 2.21955 1.23709L7.28967 6.29185Z"
+                    fill="currentColor" />
+                </svg>
+              </span>
+            </div>
+
+          </section>
+          <section class="section">
+            <div type="button" class="section__toggle is-open" aria-expanded="true" aria-controls="avt-content">
+              <span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_11411_1049)">
+                    <path
+                      d="M3.96937 12.9694C3.82899 12.8288 3.75009 12.6383 3.75 12.4397V3.75H12.4397C12.6383 3.75009 12.8288 3.82899 12.9694 3.96937L22.2806 13.2806C22.4212 13.4213 22.5001 13.612 22.5001 13.8108C22.5001 14.0096 22.4212 14.2003 22.2806 14.3409L14.3437 22.2806C14.2031 22.4212 14.0124 22.5001 13.8136 22.5001C13.6148 22.5001 13.4241 22.4212 13.2834 22.2806L3.96937 12.9694Z"
+                      stroke="#B85C28" stroke-width="1.2672" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M7.875 7.38379C8.14639 7.38379 8.36621 7.60361 8.36621 7.875C8.36621 8.14639 8.14639 8.36621 7.875 8.36621C7.60361 8.36621 7.38379 8.14639 7.38379 7.875C7.38379 7.60361 7.60361 7.38379 7.875 7.38379Z"
+                      stroke="#B85C28" stroke-width="1.2672" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_11411_1049">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                Precio
+              </span>
+              <span class="chevron js-chevron">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.28967 6.29185C7.68162 6.68262 7.68162 7.31744 7.28967 7.70821L2.21955 12.763C1.82927 13.1521 1.19776 13.1521 0.80748 12.763L0.710331 12.6661C0.318375 12.2753 0.318375 11.6405 0.710331 11.2498L4.97297 7.00003L0.710331 2.7503C0.318375 2.35953 0.318375 1.72471 0.710331 1.33394L0.807481 1.23709C1.19776 0.847995 1.82927 0.847995 2.21955 1.23709L7.28967 6.29185Z"
+                    fill="currentColor" />
+                </svg>
+              </span>
+            </div>
+            <div id="js-aventuras-fields" class="section__content">
+              <span class="price_input">
+                <input type="text" placeholder="Minimo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_11411_1049)">
+                    <path
+                      d="M3.96937 12.9694C3.82899 12.8288 3.75009 12.6383 3.75 12.4397V3.75H12.4397C12.6383 3.75009 12.8288 3.82899 12.9694 3.96937L22.2806 13.2806C22.4212 13.4213 22.5001 13.612 22.5001 13.8108C22.5001 14.0096 22.4212 14.2003 22.2806 14.3409L14.3437 22.2806C14.2031 22.4212 14.0124 22.5001 13.8136 22.5001C13.6148 22.5001 13.4241 22.4212 13.2834 22.2806L3.96937 12.9694Z"
+                      stroke="currentColor" stroke-width="1.2672" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M7.875 7.38379C8.14639 7.38379 8.36621 7.60361 8.36621 7.875C8.36621 8.14639 8.14639 8.36621 7.875 8.36621C7.60361 8.36621 7.38379 8.14639 7.38379 7.875C7.38379 7.60361 7.60361 7.38379 7.875 7.38379Z"
+                      stroke="currentColor" stroke-width="1.2672" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_11411_1049">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+              </span>
+              <span class="price_input">
+                <input type="text" placeholder="Máximo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_11411_1049)">
+                    <path
+                      d="M3.96937 12.9694C3.82899 12.8288 3.75009 12.6383 3.75 12.4397V3.75H12.4397C12.6383 3.75009 12.8288 3.82899 12.9694 3.96937L22.2806 13.2806C22.4212 13.4213 22.5001 13.612 22.5001 13.8108C22.5001 14.0096 22.4212 14.2003 22.2806 14.3409L14.3437 22.2806C14.2031 22.4212 14.0124 22.5001 13.8136 22.5001C13.6148 22.5001 13.4241 22.4212 13.2834 22.2806L3.96937 12.9694Z"
+                      stroke="currentColor" stroke-width="1.2672" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M7.875 7.38379C8.14639 7.38379 8.36621 7.60361 8.36621 7.875C8.36621 8.14639 8.14639 8.36621 7.875 8.36621C7.60361 8.36621 7.38379 8.14639 7.38379 7.875C7.38379 7.60361 7.60361 7.38379 7.875 7.38379Z"
+                      stroke="currentColor" stroke-width="1.2672" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_11411_1049">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+              </span>
+            </div>
+          </section>
+        </form>
       </aside>
       <div class="results-container">
-        aqui iran los resultados
+        <h2>Asia</h2>
+        <section class="cards-container">
+          <article class="card">
+
+            <header class="card__header">
+              <img src="" alt="">
+              <span>
+                Quads
+              </span>
+            </header>
+
+            <div class="card__body">
+              <div class="card-body__info">
+                <p class="location">Marruecos, África</p>
+                <p class="date">9 días</p>
+              </div>
+              <h3 class="card-body__title">
+                <p>Descubre Marrakech con Iberojet</p>
+              </h3>
+            </div>
+
+            <footer class="card__footer">
+              <div class="card-footer__summary">
+                <small>Desde</small>
+                <p>248,00 €</p>
+                <div class="detached">
+                  <a href="#">Ver desglose &#8964;</a>
+                  <div class="detached__modal">
+
+                    <div class="modal__header">
+                      <p>Desglose de precios</p>
+                      <span>&times;</span>
+                    </div>
+
+                    <div class="modal__body">
+                      <div class="info">
+                        <p class="location">Marruecos, África</p>
+                        <p class="date">9 días</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </article>
+
+        </section>
       </div>
 
     </div>

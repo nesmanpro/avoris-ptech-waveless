@@ -1,59 +1,67 @@
 :root {
     font-family: "Nunito", sans-serif;
-
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
+    /* Fonts */
     --font-family--title: "Syne", sans-serif;
     --font-family--default: "Nunito", sans-serif;
 
+    /* Base Color Palette */
+    --color-purple: #622F60;
+    --color-purple-hover: #471F45;
+    --color-purple-disabled: #A0989F;
+
+    --color-orange: #FF8F50;
+    --color-dark-orange: #B85C28;
+    --color-orange-hover: #D67843;
+    --color-orange-disabled: #817781;
+
+    --color-white: #ffffff;
+    --color-white-alt: #F8F7F8;
+    --color-gray-text: #635A63;
+    --color-brown: #4E250E;
+    --color-brown-hover: #57290F;
+    --color-brown-disabled: #494149;
+
     --color-title--default: #2F222F;
+    --color-icon-navbar: #342E34;
 
-    --color-basic--default: #622F60;
-    --color-basic--default-hover: #471F45;
-    --color-basic--default-disable: #A0989F;
-
-    --color-basic--primary: #FF8F50;
-    --color-basic--primary-hover: #D67843;
-    --color-basic--primary-disable: #817781;
-
+    /* Backgrounds */
     --color-background--light: #f7f8fa;
-
-    // buttons
-    --bg--default: #622F60;
-    --bg--default-hover: #471F45;
-    --bg--default-disabled: #A0989F;
-
-    --color--default: #fff;
-    --color--default-hover: #F8F7F8;
-    --color--default-disabled: #635A63;
-
-    --bg--primary: #FF8F50;
-    --bg--primary-hover: #D67843;
-    --bg--primary-disabled: #817781;
-
-    --color--primary: #4E250E;
-    --color--primary-hover: #57290F;
-    --color--primary-disabled: #494149;
-
-    // icons
-
-    --color--icon-navbar: #342E34;
-
-    --color--icon-default: #622F60;
-    --color--icon-default-hover: #471F45;
-    --color--icon-default-disabled: #A0989F;
-
-    --color--icon-primary: #FF8F50;
-    --color--icon-primary-hover: #D67843;
-    --color--icon-primary-disabled: #817781;
-
-
-    // footer
+    --bg--search-bar: #FBF6F4;
     --bg--footer-light: #FAF7F5;
     --bg--footer-dark: #E0D9E0;
 
+    /* Buttons */
+    --bg--default: var(--color-purple);
+    --bg--default-hover: var(--color-purple-hover);
+    --bg--default-disabled: var(--color-purple-disabled);
+
+    --bg--primary: var(--color-orange);
+    --bg--primary-dark: var(--color-dark-orange);
+    --bg--primary-hover: var(--color-orange-hover);
+    --bg--primary-disabled: var(--color-orange-disabled);
+
+    --color--default: var(--color-white);
+    --color--default-hover: var(--color-white-alt);
+    --color--default-disabled: var(--color-gray-text);
+
+    --color--primary: var(--color-brown);
+    --color--primary-hover: var(--color-brown-hover);
+    --color--primary-disabled: var(--color-brown-disabled);
+
+    /* Icons */
+    --color--icon-default: var(--color-purple);
+    --color--icon-default-hover: var(--color-purple-hover);
+    --color--icon-default-disabled: var(--color-purple-disabled);
+
+    --color--icon-primary: var(--color-orange);
+    --color--icon-primary-hover: var(--color-orange-hover);
+    --color--icon-primary-disabled: var(--color-orange-disabled);
+
+    /* Layout */
     --desktop-width: 1440;
 }

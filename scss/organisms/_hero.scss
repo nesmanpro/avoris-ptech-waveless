@@ -41,12 +41,12 @@
                     width: 10px;
                     height: 10px;
                     border-radius: 100%;
-                    background-color: var(--color-basic--primary-disable);
+                    background-color: var(--bg--primary-disabled);
                     border: 1px solid white;
                 }
 
                 span.active {
-                    background-color: var(--color-basic--primary);
+                    background-color: var(--bg--primary);
                 }
 
             }

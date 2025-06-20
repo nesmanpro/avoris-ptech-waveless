@@ -1,0 +1,52 @@
+[
+  {
+    "id": "001",
+    "destino": {
+      "ciudad": "Marruecos",
+      "continente": "África"
+    },
+    "titulo": "Descubre Marrakech con Iberojet",
+    "precio": "285,00",
+    "aventura": "Parapente"
+  },
+  {
+    "id": "002",
+    "destino": {
+      "ciudad": "Bangkok",
+      "continente": "Asia"
+    },
+    "titulo": "Explora Bangkok y sus templos",
+    "precio": "399,00",
+    "aventura": "Quads"
+  },
+  {
+    "id": "003",
+    "destino": {
+      "ciudad": "Lisboa",
+      "continente": "Europa"
+    },
+    "titulo": "Escapada a Lisboa con encanto",
+    "precio": "199,00",
+    "aventura": "buceo"
+  },
+  {
+    "id": "004",
+    "destino": {
+      "ciudad": "Cusco",
+      "continente": "América"
+    },
+    "titulo": "Misterios del Machu Picchu",
+    "precio": "680,00",
+    "aventura": "paracaidismo"
+  },
+  {
+    "id": "005",
+    "destino": {
+      "ciudad": "Queenstown",
+      "continente": "Oceanía"
+    },
+    "titulo": "Aventura extrema en Nueva Zelanda",
+    "precio": "990,00",
+    "aventura": "surf"
+  }
+]
