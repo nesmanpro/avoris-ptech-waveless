@@ -11,6 +11,7 @@
 
     /* Base Color Palette */
     --color-purple: #622F60;
+    --color-purple-16: #622F6029;
     --color-purple-hover: #471F45;
     --color-purple-disabled: #A0989F;
 
@@ -22,17 +23,18 @@
     --color-white: #ffffff;
     --color-white-alt: #F8F7F8;
     --color-gray-text: #635A63;
+    --color-gray-dots: #beb7be;
     --color-brown: #4E250E;
     --color-brown-hover: #57290F;
     --color-brown-disabled: #494149;
 
     --color-title--default: #2F222F;
+    --color-subtitle--default: #6B7D8D;
     --color-icon-navbar: #342E34;
 
     /* Backgrounds */
     --color-background--light: #f7f8fa;
-    --bg--search-bar: #FBF6F4;
-    --bg--footer-light: #FAF7F5;
+    --bg--footer-light: #FBF6F4;
     --bg--footer-dark: #E0D9E0;
 
     /* Buttons */
@@ -44,6 +46,7 @@
     --bg--primary-dark: var(--color-dark-orange);
     --bg--primary-hover: var(--color-orange-hover);
     --bg--primary-disabled: var(--color-orange-disabled);
+    --bg--search: #FAF7F5;
 
     --color--default: var(--color-white);
     --color--default-hover: var(--color-white-alt);

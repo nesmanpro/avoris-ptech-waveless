@@ -170,6 +170,18 @@
     </div>
 
     <div class="main__content">
+      <button class="show-filters__btn js-show-filters"><span><svg width="25" height="24" viewBox="0 0 25 24"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.83301 6H21.1663" stroke="#2F222F" stroke-width="1.7" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M7.16602 12H17.8327" stroke="#2F222F" stroke-width="1.7" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M10.5 18H14.5" stroke="#2F222F" stroke-width="1.7" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </span>
+        <p>Ver filtros</p>
+      </button>
       <aside class="search-bar">
         <div class="search-bar__title">
           <h4>Filtrar mi búsqueda</h4>
@@ -399,60 +411,668 @@
           </section>
         </form>
       </aside>
-      <div class="results-container">
-        <h2>Asia</h2>
-        <section class="cards-container">
-          <article class="card">
+      <div class="results">
+        <section class="results__section">
+          <div class="results__title">
+            <h2>Asia</h2>
 
-            <header class="card__header">
-              <img src="" alt="">
-              <span>
-                Quads
-              </span>
-            </header>
+          </div>
+          <div class="results__grid">
 
-            <div class="card__body">
-              <div class="card-body__info">
-                <p class="location">Marruecos, África</p>
-                <p class="date">9 días</p>
+            <!-- starts card -->
+            <article class="card">
+
+              <header class="card__header">
+                <img src="./assets/img/img1.jpg" alt="Beautiful landscape of Marrakech">
+                <span>
+                  <p>Quads</p>
+
+                </span>
+              </header>
+
+              <div class="card__body">
+                <div class="card-body__info">
+                  <p class="location">Marruecos, África</p>
+                  <p class="date">9 días</p>
+                </div>
+                <h3 class="card-body__title">
+                  Descubre Marrakech con Iberojet
+                </h3>
               </div>
-              <h3 class="card-body__title">
-                <p>Descubre Marrakech con Iberojet</p>
-              </h3>
-            </div>
 
-            <footer class="card__footer">
-              <div class="card-footer__summary">
-                <small>Desde</small>
-                <p>248,00 €</p>
-                <div class="detached">
-                  <a href="#">Ver desglose &#8964;</a>
-                  <div class="detached__modal">
+              <footer class="card__footer">
+                <div class="card-footer__summary">
+                  <small>Desde</small>
+                  <p class="price">248,00 €</p>
 
-                    <div class="modal__header">
-                      <p>Desglose de precios</p>
-                      <span>&times;</span>
-                    </div>
+                  <a href="#">
+                    <p>Ver desglose</p> <sup>&#8964;</sup>
+                  </a>
+                </div>
+                <button class="card-button">Reservar</button>
+              </footer>
 
+            </article>
+            <!-- ends card -->
+            <!-- starts card -->
+            <article class="card">
+
+              <header class="card__header">
+                <img src="./assets/img/img1.jpg" alt="Beautiful landscape of Marrakech">
+                <span>
+                  <p>Quads</p>
+
+                </span>
+              </header>
+
+              <div class="card__body">
+                <div class="card-body__info">
+                  <p class="location">Marruecos, África</p>
+                  <p class="date">9 días</p>
+                </div>
+                <h3 class="card-body__title">
+                  Descubre Marrakech con Iberojet
+                </h3>
+              </div>
+
+              <footer class="card__footer">
+                <div class="card-footer__summary">
+                  <small>Desde</small>
+                  <p class="price">248,00 €</p>
+
+                  <a href="#">
+                    <p>Ver desglose</p> <sup>&#8964;</sup>
+                  </a>
+
+                  <!-- starts modal -->
+                  <div class="detached__modal hidden">
+                    <header class="modal__header">
+                      <h4>Desglose de precios</h4>
+                      <button aria-label="Cerrar modal">&times;</button>
+                    </header>
                     <div class="modal__body">
                       <div class="info">
                         <p class="location">Marruecos, África</p>
                         <p class="date">9 días</p>
                       </div>
+                      <div class="price">
+                        <p>Precio antes de impuestos</p>
+                        <span>1.124,00 €</span>
+                      </div>
+                      <div class="taxes">
+                        <p>Iimpuestos</p>
+                        <span>4,43 €</span>
+                      </div>
+                      <div class="extra_text">
+                        <p>Lorem ipsum</p>
+                        <span>150,42 €</span>
+                      </div>
                     </div>
+                    <footer>
+                      <div class="final-price">
+                        <p>Precio final</p>
+                        <span>2.455,00 €</span>
+                      </div>
+                    </footer>
                   </div>
-                </div>
-              </div>
-            </footer>
-          </article>
+                  <!-- ends modal -->
 
+
+                </div>
+                <button class="card-button">Reservar</button>
+              </footer>
+            </article>
+            <!-- ends card -->
+            <!-- starts card -->
+            <article class="card">
+
+              <header class="card__header">
+                <img src="./assets/img/img1.jpg" alt="Beautiful landscape of Marrakech">
+                <span>
+                  <p>Quads</p>
+
+                </span>
+              </header>
+
+              <div class="card__body">
+                <div class="card-body__info">
+                  <p class="location">Marruecos, África</p>
+                  <p class="date">9 días</p>
+                </div>
+                <h3 class="card-body__title">
+                  Descubre Marrakech con Iberojet
+                </h3>
+              </div>
+
+              <footer class="card__footer">
+                <div class="card-footer__summary">
+                  <small>Desde</small>
+                  <p class="price">248,00 €</p>
+
+                  <a href="#">
+                    <p>Ver desglose</p> <sup>&#8964;</sup>
+                  </a>
+
+                  <!-- starts modal -->
+                  <div class="detached__modal hidden">
+                    <header class="modal__header">
+                      <h4>Desglose de precios</h4>
+                      <button aria-label="Cerrar modal">&times;</button>
+                    </header>
+                    <div class="modal__body">
+                      <div class="info">
+                        <p class="location">Marruecos, África</p>
+                        <p class="date">9 días</p>
+                      </div>
+                      <div class="price">
+                        <p>Precio antes de impuestos</p>
+                        <span>1.124,00 €</span>
+                      </div>
+                      <div class="taxes">
+                        <p>Iimpuestos</p>
+                        <span>4,43 €</span>
+                      </div>
+                      <div class="extra_text">
+                        <p>Lorem ipsum</p>
+                        <span>150,42 €</span>
+                      </div>
+                    </div>
+                    <footer>
+                      <div class="final-price">
+                        <p>Precio final</p>
+                        <span>2.455,00 €</span>
+                      </div>
+                    </footer>
+                  </div>
+                  <!-- ends modal -->
+
+
+                </div>
+                <button class="card-button">Reservar</button>
+              </footer>
+            </article>
+            <!-- ends card -->
+
+          </div>
         </section>
+        <section class="results__section">
+          <div class="results__title">
+            <h2>Asia</h2>
+
+          </div>
+          <div class="results__grid">
+
+            <!-- starts card -->
+            <article class="card">
+
+              <header class="card__header">
+                <img src="./assets/img/img1.jpg" alt="Beautiful landscape of Marrakech">
+                <span>
+                  <p>Quads</p>
+
+                </span>
+              </header>
+
+              <div class="card__body">
+                <div class="card-body__info">
+                  <p class="location">Marruecos, África</p>
+                  <p class="date">9 días</p>
+                </div>
+                <h3 class="card-body__title">
+                  Descubre Marrakech con Iberojet
+                </h3>
+              </div>
+
+              <footer class="card__footer">
+                <div class="card-footer__summary">
+                  <small>Desde</small>
+                  <p class="price">248,00 €</p>
+
+                  <a href="#">
+                    <p>Ver desglose</p> <sup>&#8964;</sup>
+                  </a>
+
+                  <!-- starts modal -->
+                  <div class="detached__modal hidden">
+                    <header class="modal__header">
+                      <h4>Desglose de precios</h4>
+                      <button aria-label="Cerrar modal">&times;</button>
+                    </header>
+                    <div class="modal__body">
+                      <div class="info">
+                        <p class="location">Marruecos, África</p>
+                        <p class="date">9 días</p>
+                      </div>
+                      <div class="price">
+                        <p>Precio antes de impuestos</p>
+                        <span>1.124,00 €</span>
+                      </div>
+                      <div class="taxes">
+                        <p>Iimpuestos</p>
+                        <span>4,43 €</span>
+                      </div>
+                      <div class="extra_text">
+                        <p>Lorem ipsum</p>
+                        <span>150,42 €</span>
+                      </div>
+                    </div>
+                    <footer>
+                      <div class="final-price">
+                        <p>Precio final</p>
+                        <span>2.455,00 €</span>
+                      </div>
+                    </footer>
+                  </div>
+                  <!-- ends modal -->
+
+
+                </div>
+                <button class="card-button">Reservar</button>
+              </footer>
+            </article>
+            <!-- ends card -->
+            <!-- starts card -->
+            <article class="card">
+
+              <header class="card__header">
+                <img src="./assets/img/img1.jpg" alt="Beautiful landscape of Marrakech">
+                <span>
+                  <p>Quads</p>
+
+                </span>
+              </header>
+
+              <div class="card__body">
+                <div class="card-body__info">
+                  <p class="location">Marruecos, África</p>
+                  <p class="date">9 días</p>
+                </div>
+                <h3 class="card-body__title">
+                  Descubre Marrakech con Iberojet
+                </h3>
+              </div>
+
+              <footer class="card__footer">
+                <div class="card-footer__summary">
+                  <small>Desde</small>
+                  <p class="price">248,00 €</p>
+
+                  <a href="#">
+                    <p>Ver desglose</p> <sup>&#8964;</sup>
+                  </a>
+
+                  <!-- starts modal -->
+                  <div class="detached__modal hidden">
+                    <header class="modal__header">
+                      <h4>Desglose de precios</h4>
+                      <button aria-label="Cerrar modal">&times;</button>
+                    </header>
+                    <div class="modal__body">
+                      <div class="info">
+                        <p class="location">Marruecos, África</p>
+                        <p class="date">9 días</p>
+                      </div>
+                      <div class="price">
+                        <p>Precio antes de impuestos</p>
+                        <span>1.124,00 €</span>
+                      </div>
+                      <div class="taxes">
+                        <p>Iimpuestos</p>
+                        <span>4,43 €</span>
+                      </div>
+                      <div class="extra_text">
+                        <p>Lorem ipsum</p>
+                        <span>150,42 €</span>
+                      </div>
+                    </div>
+                    <footer>
+                      <div class="final-price">
+                        <p>Precio final</p>
+                        <span>2.455,00 €</span>
+                      </div>
+                    </footer>
+                  </div>
+                  <!-- ends modal -->
+
+
+                </div>
+                <button class="card-button">Reservar</button>
+              </footer>
+            </article>
+            <!-- ends card -->
+            <!-- starts card -->
+            <article class="card">
+
+              <header class="card__header">
+                <img src="./assets/img/img1.jpg" alt="Beautiful landscape of Marrakech">
+                <span>
+                  <p>Quads</p>
+
+                </span>
+              </header>
+
+              <div class="card__body">
+                <div class="card-body__info">
+                  <p class="location">Marruecos, África</p>
+                  <p class="date">9 días</p>
+                </div>
+                <h3 class="card-body__title">
+                  Descubre Marrakech con Iberojet
+                </h3>
+              </div>
+
+              <footer class="card__footer">
+                <div class="card-footer__summary">
+                  <small>Desde</small>
+                  <p class="price">248,00 €</p>
+
+                  <a href="#">
+                    <p>Ver desglose</p> <sup>&#8964;</sup>
+                  </a>
+
+                  <!-- starts modal -->
+                  <div class="detached__modal hidden">
+                    <header class="modal__header">
+                      <h4>Desglose de precios</h4>
+                      <button aria-label="Cerrar modal">&times;</button>
+                    </header>
+                    <div class="modal__body">
+                      <div class="info">
+                        <p class="location">Marruecos, África</p>
+                        <p class="date">9 días</p>
+                      </div>
+                      <div class="price">
+                        <p>Precio antes de impuestos</p>
+                        <span>1.124,00 €</span>
+                      </div>
+                      <div class="taxes">
+                        <p>Iimpuestos</p>
+                        <span>4,43 €</span>
+                      </div>
+                      <div class="extra_text">
+                        <p>Lorem ipsum</p>
+                        <span>150,42 €</span>
+                      </div>
+                    </div>
+                    <footer>
+                      <div class="final-price">
+                        <p>Precio final</p>
+                        <span>2.455,00 €</span>
+                      </div>
+                    </footer>
+                  </div>
+                  <!-- ends modal -->
+
+
+                </div>
+                <button class="card-button">Reservar</button>
+              </footer>
+            </article>
+            <!-- ends card -->
+            <!-- starts card -->
+            <article class="card">
+
+              <header class="card__header">
+                <img src="./assets/img/img1.jpg" alt="Beautiful landscape of Marrakech">
+                <span>
+                  <p>Quads</p>
+
+                </span>
+              </header>
+
+              <div class="card__body">
+                <div class="card-body__info">
+                  <p class="location">Marruecos, África</p>
+                  <p class="date">9 días</p>
+                </div>
+                <h3 class="card-body__title">
+                  Descubre Marrakech con Iberojet
+                </h3>
+              </div>
+
+              <footer class="card__footer">
+                <div class="card-footer__summary">
+                  <small>Desde</small>
+                  <p class="price">248,00 €</p>
+
+                  <a href="#">
+                    <p>Ver desglose</p> <sup>&#8964;</sup>
+                  </a>
+
+                  <!-- starts modal -->
+                  <div class="detached__modal hidden">
+                    <header class="modal__header">
+                      <h4>Desglose de precios</h4>
+                      <button aria-label="Cerrar modal">&times;</button>
+                    </header>
+                    <div class="modal__body">
+                      <div class="info">
+                        <p class="location">Marruecos, África</p>
+                        <p class="date">9 días</p>
+                      </div>
+                      <div class="price">
+                        <p>Precio antes de impuestos</p>
+                        <span>1.124,00 €</span>
+                      </div>
+                      <div class="taxes">
+                        <p>Iimpuestos</p>
+                        <span>4,43 €</span>
+                      </div>
+                      <div class="extra_text">
+                        <p>Lorem ipsum</p>
+                        <span>150,42 €</span>
+                      </div>
+                    </div>
+                    <footer>
+                      <div class="final-price">
+                        <p>Precio final</p>
+                        <span>2.455,00 €</span>
+                      </div>
+                    </footer>
+                  </div>
+                  <!-- ends modal -->
+
+
+                </div>
+                <button class="card-button">Reservar</button>
+              </footer>
+            </article>
+            <!-- ends card -->
+            <!-- starts card -->
+            <article class="card">
+
+              <header class="card__header">
+                <img src="./assets/img/img1.jpg" alt="Beautiful landscape of Marrakech">
+                <span>
+                  <p>Quads</p>
+
+                </span>
+              </header>
+
+              <div class="card__body">
+                <div class="card-body__info">
+                  <p class="location">Marruecos, África</p>
+                  <p class="date">9 días</p>
+                </div>
+                <h3 class="card-body__title">
+                  Descubre Marrakech con Iberojet
+                </h3>
+              </div>
+
+              <footer class="card__footer">
+                <div class="card-footer__summary">
+                  <small>Desde</small>
+                  <p class="price">248,00 €</p>
+
+                  <a href="#">
+                    <p>Ver desglose</p> <sup>&#8964;</sup>
+                  </a>
+
+                  <!-- starts modal -->
+                  <div class="detached__modal hidden">
+                    <header class="modal__header">
+                      <h4>Desglose de precios</h4>
+                      <button aria-label="Cerrar modal">&times;</button>
+                    </header>
+                    <div class="modal__body">
+                      <div class="info">
+                        <p class="location">Marruecos, África</p>
+                        <p class="date">9 días</p>
+                      </div>
+                      <div class="price">
+                        <p>Precio antes de impuestos</p>
+                        <span>1.124,00 €</span>
+                      </div>
+                      <div class="taxes">
+                        <p>Iimpuestos</p>
+                        <span>4,43 €</span>
+                      </div>
+                      <div class="extra_text">
+                        <p>Lorem ipsum</p>
+                        <span>150,42 €</span>
+                      </div>
+                    </div>
+                    <footer>
+                      <div class="final-price">
+                        <p>Precio final</p>
+                        <span>2.455,00 €</span>
+                      </div>
+                    </footer>
+                  </div>
+                  <!-- ends modal -->
+
+
+                </div>
+                <button class="card-button">Reservar</button>
+              </footer>
+            </article>
+            <!-- ends card -->
+            <!-- starts card -->
+            <article class="card">
+
+              <header class="card__header">
+                <img src="./assets/img/img1.jpg" alt="Beautiful landscape of Marrakech">
+                <span>
+                  <p>Quads</p>
+
+                </span>
+              </header>
+
+              <div class="card__body">
+                <div class="card-body__info">
+                  <p class="location">Marruecos, África</p>
+                  <p class="date">9 días</p>
+                </div>
+                <h3 class="card-body__title">
+                  Descubre Marrakech con Iberojet
+                </h3>
+              </div>
+
+              <footer class="card__footer">
+                <div class="card-footer__summary">
+                  <small>Desde</small>
+                  <p class="price">248,00 €</p>
+
+                  <a href="#">
+                    <p>Ver desglose</p> <sup>&#8964;</sup>
+                  </a>
+
+                  <!-- starts modal -->
+                  <div class="detached__modal hidden">
+                    <header class="modal__header">
+                      <h4>Desglose de precios</h4>
+                      <button aria-label="Cerrar modal">&times;</button>
+                    </header>
+                    <div class="modal__body">
+                      <div class="info">
+                        <p class="location">Marruecos, África</p>
+                        <p class="date">9 días</p>
+                      </div>
+                      <div class="price">
+                        <p>Precio antes de impuestos</p>
+                        <span>1.124,00 €</span>
+                      </div>
+                      <div class="taxes">
+                        <p>Iimpuestos</p>
+                        <span>4,43 €</span>
+                      </div>
+                      <div class="extra_text">
+                        <p>Lorem ipsum</p>
+                        <span>150,42 €</span>
+                      </div>
+                    </div>
+                    <footer>
+                      <div class="final-price">
+                        <p>Precio final</p>
+                        <span>2.455,00 €</span>
+                      </div>
+                    </footer>
+                  </div>
+                  <!-- ends modal -->
+
+
+                </div>
+                <button class="card-button">Reservar</button>
+              </footer>
+            </article>
+            <!-- ends card -->
+
+
+          </div>
+        </section>
+
+
       </div>
 
     </div>
 
+    <!-- starts modal -->
+    <div id="js-summary-modal" class="summary__modal hidden">
+      <header class="modal__header">
+        <h4>Desglose de precios</h4>
+        <button aria-label="Cerrar modal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_11411_2527" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+              height="24">
+              <rect width="24" height="24" fill="#D9D9D9" />
+            </mask>
+            <g mask="url(#mask0_11411_2527)">
+              <path
+                d="M18.8998 17.4998C19.0998 17.6998 19.1998 17.8998 19.1998 18.1998C19.1998 18.4998 19.0998 18.6998 18.8998 18.8998C18.6998 19.0998 18.4998 19.1998 18.1998 19.1998C17.8998 19.1998 17.6998 19.0998 17.4998 18.8998L11.9998 13.3998L6.4998 18.8998C6.2998 19.0998 6.0998 19.1998 5.7998 19.1998C5.4998 19.1998 5.2998 19.0998 5.0998 18.8998C4.8998 18.6998 4.7998 18.4998 4.7998 18.1998C4.7998 17.8998 4.8998 17.6998 5.0998 17.4998L10.5998 11.9998L5.0998 6.4998C4.9998 6.2998 4.8998 6.0998 4.8998 5.7998C4.8998 5.4998 4.9998 5.2998 5.1998 5.0998C5.5998 4.6998 6.1998 4.6998 6.5998 5.0998L12.0998 10.5998L17.5998 5.0998C17.7998 4.8998 17.9998 4.7998 18.2998 4.7998C18.5998 4.7998 18.7998 4.8998 18.9998 5.0998C19.1998 5.2998 19.2998 5.4998 19.2998 5.7998C19.2998 6.0998 18.9998 6.2998 18.8998 6.4998L13.3998 11.9998L18.8998 17.4998Z"
+                fill="#342E34" />
+            </g>
+          </svg>
+
+        </button>
+      </header>
+      <div class="modal__body">
+        <div class="info">
+          <p class="location">Marruecos, África</p>
+          <p class="date">9 días</p>
+        </div>
+        <div class="price">
+          <p>Precio antes de impuestos</p>
+          <span>1.124,00 €</span>
+        </div>
+        <div class="taxes">
+          <p>Iimpuestos</p>
+          <span>4,43 €</span>
+        </div>
+        <div class="extra_text">
+          <p>Lorem ipsum</p>
+          <span>150,42 €</span>
+        </div>
+      </div>
+      <footer class="modal__footer">
+        <p>Precio final</p>
+        <span>2.455,00 €</span>
+      </footer>
+    </div>
+    <!-- ends modal -->
 
   </main>
+
+  <!-- main footer -->
   <footer>
     <div class="footer__header-bar">
       <img src="./assets/logos/logo.svg" alt="footer waveless logo">
@@ -461,7 +1081,9 @@
       <p>@2024 Waveless - Todos los derechos reservados.</p>
     </div>
   </footer>
+
   <script type="module" src="./app/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 </body>
 
 </html>

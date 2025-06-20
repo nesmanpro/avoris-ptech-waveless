@@ -41,7 +41,7 @@
                     width: 10px;
                     height: 10px;
                     border-radius: 100%;
-                    background-color: var(--bg--primary-disabled);
+                    background-color: var(--color-gray-dots);
                     border: 1px solid white;
                 }
 
@@ -64,21 +64,23 @@
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                gap: 10px;
+                gap: 8px;
                 margin-bottom: 20px;
 
                 .title,
                 .subtitle {
                     color: var(--color--default);
-                    font-family: var(--font-family--title);
                 }
 
                 .title {
-                    font-size: 33px;
+                    font-family: var(--font-family--title);
+                    font-size: 30px;
+                    font-weight: 700;
                 }
 
                 .subtitle {
-                    font-size: 18px;
+                    font-size: 20px;
+                    font-family: var(--font-family--subtitle);
                 }
 
                 button {
