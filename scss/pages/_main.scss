@@ -1,5 +1,10 @@
 .home-page {
 
+
+    .hidden {
+        display: none;
+    }
+
     header {
         width: 100%;
     }
@@ -69,7 +74,7 @@
                 position: relative;
                 width: 23.5%;
                 min-width: 265px;
-                margin-top: 50px;
+                margin-top: 43px;
                 margin-left: 10px;
                 border-radius: 25px;
                 height: fit-content;
@@ -88,8 +93,7 @@
 
                     .results__grid {
                         display: grid;
-                        grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
-                        justify-items: center;
+                        grid-template-columns: repeat(3, 1fr);
                         gap: 20px;
                     }
 
@@ -154,6 +158,7 @@
                     margin: 0;
                     top: 0;
                     left: -100%;
+                    transform: translateX(0);
                 }
 
                 .results {
@@ -233,6 +238,7 @@
     .home-page {
 
         main {
+            position: static;
 
             .main__header {
                 h1 {
@@ -254,8 +260,10 @@
                 padding: 0;
 
                 .search-bar {
-                    position: absolute;
+                    position: fixed;
+                    overflow-y: scroll;
                     min-width: 265px;
+                    width: 100vw;
                     border-radius: 0;
                     height: 100%;
                     z-index: 50;

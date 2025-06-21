@@ -1,4 +1,4 @@
-const openModalBtn =
-    document.addEventListener("DOMContentLoaded", (event) => {
 
-    });
+document.addEventListener("DOMContentLoaded", (event) => {
+
+});

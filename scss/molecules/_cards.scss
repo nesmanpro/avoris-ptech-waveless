@@ -5,6 +5,8 @@
         width: 264px;
         overflow: hidden;
         border-radius: 24px;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
 
         &__header {
             position: relative;
@@ -28,6 +30,7 @@
                 top: 18px;
                 right: 12px;
                 z-index: 1;
+                text-transform: capitalize;
             }
         }
 
@@ -44,6 +47,7 @@
                     font-weight: 700;
                     font-size: 14px;
                     color: var(--bg--default);
+                    text-transform: capitalize;
                 }
 
                 .date {
@@ -86,12 +90,13 @@
                     line-height: 24px;
                 }
 
-                a {
+                span {
                     height: fit-content;
                     display: inline-flex;
                     align-items: center;
                     gap: 3px;
                     color: var(--bg--default);
+                    cursor: pointer;
 
                     p {
                         font-size: 14px;
@@ -113,6 +118,7 @@
                 font-weight: 600;
                 font-family: var(--font-family--subtitle);
                 margin-bottom: 2px;
+                cursor: pointer;
             }
 
 
@@ -187,6 +193,7 @@
                     font-weight: 600;
                     font-family: var(--font-family--subtitle);
                     margin-bottom: 2px;
+
                 }
 
 
