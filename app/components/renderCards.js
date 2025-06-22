@@ -78,15 +78,15 @@ function renderCardsGrid(cards) {
 function addShowModalListeners() {
   const cards = document.querySelectorAll('.card');
   cards.forEach(card => {
-    const link = card.querySelector('.card-footer__summary span'); // tu <span> que contiene el "Ver desglose"
+    const link = card.querySelector('.card-footer__summary span');
     if (!link) return;
 
-    link.style.cursor = 'pointer'; // Opcional: para que parezca clicable
+    link.style.cursor = 'pointer';
 
     link.addEventListener('click', (e) => {
       e.preventDefault();
 
-      // Construir objeto con datos para el modal (puedes obtenerlo del dataset o del DOM)
+
       const cardData = {
         destino: {
           pais: card.querySelector('.location').textContent.split(',')[0].trim(),
@@ -94,7 +94,7 @@ function addShowModalListeners() {
         },
         dias: card.querySelector('.date').textContent,
         precio: card.querySelector('.price').textContent.replace(' €', ''),
-        // Suponiendo que no tienes impuestos, extra, precioFinal, puedes poner valores por defecto o modificarlos luego
+
         impuestos: '4,43',
         extra: '150,42',
         precioFinal: '2.455,00'

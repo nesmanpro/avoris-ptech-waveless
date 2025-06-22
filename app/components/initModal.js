@@ -1,4 +1,6 @@
+
 import { formatPrice, formatTax } from "../utils/formatPrice";
+import { scaleUp } from "../animations/scaleUpModal";
 
 export function renderSummaryModal(cardElement, cardData) {
 
@@ -32,24 +34,30 @@ export function renderSummaryModal(cardElement, cardData) {
     modal.style.top = '0px';
     modal.style.left = '0px';
 
+    if (window.innerWidth < 600) {
 
-    if (left + modalRect.width > window.innerWidth) {
-        left = rect.left - 135;
-        if (left < 0) left = 0;
+        modal.style.top = 0;
+        modal.style.left = 0;
+        modal.style.maxWidth = '100%';
+    } else {
+
+        if (left + modalRect.width > window.innerWidth) {
+            left = rect.left - 135;
+            if (left < 0) left = 0;
+        }
+
+
+        if (top + modalRect.height > window.innerHeight) {
+            top = rect.top - 30;
+            if (top < 0) top = 0;
+        }
+        modal.style.top = `${top}px`;
+        modal.style.left = `${left}px`;
     }
 
-
-    if (top + modalRect.height > window.innerHeight) {
-        top = rect.top - 30;
-        if (top < 0) top = 0;
-    }
+    scaleUp(modal)
 
 
-    modal.style.top = `${top}px`;
-    modal.style.left = `${left}px`;
-
-
-    // Manejador para cerrar modal
     const closeBtn = modal.querySelector('.js-close-modal');
 
     function closeHandler() {
