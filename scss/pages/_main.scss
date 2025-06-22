@@ -85,6 +85,19 @@
                 width: 76.5%;
                 margin-bottom: 42px;
 
+                .empty-earch {
+                    margin-top: 45px;
+                    width: fit-content;
+                    padding: 10px 20px;
+                    border-radius: 25px;
+                    font-weight: 600;
+                    font-family: var(--font-family--subtitle);
+
+
+
+
+                }
+
                 .results__section+.results__section .results__title {
                     margin-top: 30px;
                 }

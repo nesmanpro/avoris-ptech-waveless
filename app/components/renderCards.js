@@ -7,6 +7,20 @@ export function initRenderCards(data = cardsData) {
 
   container.innerHTML = '';
 
+  if (data.length < 1) {
+    const section = document.createElement('section');
+    section.classList.add('empty-earch');
+    const text1 = document.createElement('p');
+    const text2 = document.createElement('p');
+    text1.textContent = 'Lo sentimos! '
+    text2.textContent = 'No se encontraron aventuras con esos parametros.'
+    section.appendChild(text1)
+    section.appendChild(text2)
+    container.appendChild(section);
+
+    return
+  }
+
   data.forEach(continent => {
     const section = renderSeccionContinente(continent);
     container.appendChild(section);
@@ -18,6 +32,7 @@ export function initRenderCards(data = cardsData) {
 
 
 function renderSeccionContinente({ continent, cards }) {
+
   const section = document.createElement('section');
   section.classList.add('results__section', 'js-results-section');
 
@@ -94,10 +109,6 @@ function addShowModalListeners() {
         },
         dias: card.querySelector('.date').textContent,
         precio: card.querySelector('.price').textContent.replace(' €', ''),
-
-        impuestos: '4,43',
-        extra: '150,42',
-        precioFinal: '2.455,00'
       };
 
       renderSummaryModal(card, cardData);
