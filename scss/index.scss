@@ -2,14 +2,14 @@
 @use 'fonts/fonts';
 
 /* Abstract */
-@use 'abstract/_variables';
+@use 'abstract/variables';
 
 /* Base */
-@use 'base/_reset';
-@use 'base/_base';
+@use 'base/reset';
+@use 'base/base';
 
 /* Pages */
-@use 'pages/_main';
+@use 'pages/main';
 
 /* Layouts */
 
@@ -25,5 +25,5 @@
 /* Organisms */
 @use 'organisms/footer';
 @use 'organisms/hero';
-@use 'organisms/navBar';
-@use 'organisms/searchBar';
+@use 'organisms/navbar';
+@use 'organisms/searchbar';
