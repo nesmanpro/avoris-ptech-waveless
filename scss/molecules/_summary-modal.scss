@@ -115,12 +115,13 @@
 
         .summary__modal {
             width: 100%;
-            top: 0;
-            left: 0;
+            top: 0 !important;
+            left: 0 !important;
             height: 100%;
             border-radius: 0;
             border: 1px solid var(--bg--footer-dark);
             z-index: 100;
+            max-width: 100%;
 
             .modal__header {
                 background-color: var(--bg--footer-light);
