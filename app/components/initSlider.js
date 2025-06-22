@@ -6,16 +6,15 @@ const dotsContainer = document.querySelector('.js-dots-container');
 
 
 function createDots() {
-    try {
-        for (let i = 0; i < slidesNumber; i++) {
-            const dot = document.createElement('span');
-            dot.classList.add('js-position-dot');
-            dotsContainer.appendChild(dot);
-        }
 
-    } catch (err) {
-        throw new Error(`Se ha producido este error: ${err.message}`);
+    if (!dotsContainer) return
+
+    for (let i = 0; i < slidesNumber; i++) {
+        const dot = document.createElement('span');
+        dot.classList.add('js-position-dot');
+        dotsContainer.appendChild(dot);
     }
+
 }
 
 function scroll(direction) {
@@ -27,12 +26,10 @@ function scroll(direction) {
 }
 
 function handleBtns() {
-    try {
-        prevBtn.addEventListener('click', () => scroll(-1))
-        nextBtn.addEventListener('click', () => scroll(1))
-    } catch (err) {
-        throw new Error(`Se ha producido este error: ${err.message}`);
-    }
+    if (!prevBtn || !nextBtn) return;
+
+    prevBtn.addEventListener('click', () => scroll(-1))
+    nextBtn.addEventListener('click', () => scroll(1))
 }
 
 function getCurrentSlideIndex() {
@@ -55,7 +52,7 @@ function updateActiveDot() {
 }
 
 
-export function manageSlider() {
+export function handleSlider() {
     handleBtns()
     createDots()
     setTimeout(updateActiveDot, 200);

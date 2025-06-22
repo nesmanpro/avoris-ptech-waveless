@@ -29,7 +29,7 @@ mm.add("(max-width: 1123px)", () => {
 });
 
 
-export function handleFilterMenu() {
+export function initFilterMenu() {
 
     filterOpenBtn.addEventListener('click', () => {
         tl?.play();

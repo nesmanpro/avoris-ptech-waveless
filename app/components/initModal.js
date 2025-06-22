@@ -1,6 +1,6 @@
 import { formatPrice, formatTax } from "../utils/formatPrice";
 
-export function showSummaryModal(cardElement, cardData) {
+export function renderSummaryModal(cardElement, cardData) {
 
     const modal = document.getElementById('js-summary-modal');
 

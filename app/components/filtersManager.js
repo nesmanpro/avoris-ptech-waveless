@@ -1,5 +1,5 @@
 import { filterCardsByParams } from '../utils/filterUtils';
-import { initRenderCards } from './showCards';
+import { initRenderCards } from './renderCards';
 import cardsData from '../mock/data.json';
 
 function onFiltersChange(cb) {

@@ -1,5 +1,5 @@
 import cardsData from '../mock/data.json';
-import { showSummaryModal } from './handleModal.js';
+import { renderSummaryModal } from './initModal.js';
 
 export function initRenderCards(data = cardsData) {
   const container = document.querySelector('.js-results-container');
@@ -100,7 +100,7 @@ function addShowModalListeners() {
         precioFinal: '2.455,00'
       };
 
-      showSummaryModal(card, cardData);
+      renderSummaryModal(card, cardData);
     });
   });
 }

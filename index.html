@@ -201,8 +201,10 @@
           </button>
         </div>
         <form class="search-bar__form" id="js-search-form">
-          <section class="section">
-            <div type="button" class="section__toggle" aria-expanded="true" aria-controls="avt-content">
+
+          <section class="section js-filter-section">
+            <div type="button" class="section__toggle js-section-toggle-btn is-open" aria-expanded="true"
+              aria-controls="dst-content">
               <span>
                 <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -230,7 +232,7 @@
 
               </span>
             </div>
-            <div id="js-place-fields" class="section__content">
+            <div id="js-place-fields" class="section__content js-section-content">
               <label>
                 <input type="checkbox" name="destino[]" value="marruecos" />
                 <span class="custom-checkbox"></span>
@@ -245,8 +247,9 @@
             </div>
           </section>
 
-          <section class="section">
-            <div type="button" class="section__toggle is-open" aria-expanded="true" aria-controls="avt-content">
+          <section class="section js-filter-section">
+            <div type="button" class="section__toggle js-section-toggle-btn is-open" aria-expanded="true"
+              aria-controls="avt-content">
               <span>
                 <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -280,7 +283,8 @@
 
               </span>
             </div>
-            <div id="js-aventuras-fields" class="section__content">
+
+            <div id="js-aventuras-fields" class="section__content js-section-content">
               <label>
                 <input type="checkbox" name="aventura[]" value="quads" />
                 <span class="custom-checkbox"></span>
@@ -321,12 +325,12 @@
                 <span class="custom-checkbox"></span>
                 Surf
               </label>
+              <a href="">Ver 21 más</a>
             </div>
 
-            <a href="">Ver 21 más</a>
           </section>
           <section class="section">
-            <div type="button" class="section__toggle" aria-expanded="true" aria-controls="avt-content">
+            <div type="button" class="section__toggle" aria-expanded="true" aria-controls="ajmt-content">
               <span>
                 <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -344,7 +348,7 @@
                 </svg>
                 Alojamiento
               </span>
-              <span class="chevron js-chevron">
+              <span class="chevron ">
                 <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M7.28967 6.29185C7.68162 6.68262 7.68162 7.31744 7.28967 7.70821L2.21955 12.763C1.82927 13.1521 1.19776 13.1521 0.80748 12.763L0.710331 12.6661C0.318375 12.2753 0.318375 11.6405 0.710331 11.2498L4.97297 7.00003L0.710331 2.7503C0.318375 2.35953 0.318375 1.72471 0.710331 1.33394L0.807481 1.23709C1.19776 0.847995 1.82927 0.847995 2.21955 1.23709L7.28967 6.29185Z"
@@ -354,17 +358,19 @@
             </div>
 
           </section>
-          <section class="section">
-            <div type="button" class="section__toggle is-open" aria-expanded="true" aria-controls="avt-content">
+          <section class="section js-filter-section">
+
+            <div type="button" class="section__toggle js-section-toggle-btn is-open" aria-expanded="true"
+              aria-controls="prc-content">
               <span>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_11411_1049)">
                     <path
                       d="M3.96937 12.9694C3.82899 12.8288 3.75009 12.6383 3.75 12.4397V3.75H12.4397C12.6383 3.75009 12.8288 3.82899 12.9694 3.96937L22.2806 13.2806C22.4212 13.4213 22.5001 13.612 22.5001 13.8108C22.5001 14.0096 22.4212 14.2003 22.2806 14.3409L14.3437 22.2806C14.2031 22.4212 14.0124 22.5001 13.8136 22.5001C13.6148 22.5001 13.4241 22.4212 13.2834 22.2806L3.96937 12.9694Z"
-                      stroke="#B85C28" stroke-width="1.2672" stroke-linecap="round" stroke-linejoin="round" />
+                      stroke="currentColor" stroke-width="1.2672" stroke-linecap="round" stroke-linejoin="round" />
                     <path
                       d="M7.875 7.38379C8.14639 7.38379 8.36621 7.60361 8.36621 7.875C8.36621 8.14639 8.14639 8.36621 7.875 8.36621C7.60361 8.36621 7.38379 8.14639 7.38379 7.875C7.38379 7.60361 7.60361 7.38379 7.875 7.38379Z"
-                      stroke="#B85C28" stroke-width="1.2672" />
+                      stroke="currentColor" stroke-width="1.2672" />
                   </g>
                   <defs>
                     <clipPath id="clip0_11411_1049">
@@ -383,7 +389,7 @@
                 </svg>
               </span>
             </div>
-            <div id="js-aventuras-fields" class="section__content">
+            <div id="js-precios-fields" class="section__content js-section-content">
               <span class="price_input">
                 <input type="number" min="0" step="1" name="min-price" placeholder="Mínimo">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
