@@ -8,7 +8,7 @@
         "titulo": "Descubre Marrakech con Iberojet",
         "precio": "285,00",
         "aventura": "parapente",
-        "imagen": "public/img/img1.jpg"
+        "imagen": "/img/img1.jpg"
       },
       {
         "id": "006",
@@ -16,7 +16,7 @@
         "titulo": "Secretos de las pirámides",
         "precio": "310,00",
         "aventura": "quads",
-        "imagen": "public/img/img2.jpg"
+        "imagen": "/img/img2.jpg"
       },
       {
         "id": "009",
@@ -24,7 +24,7 @@
         "titulo": "Playas paradisíacas en Zanzíbar",
         "precio": "340,00",
         "aventura": "quads",
-        "imagen": "public/img/img3.jpg"
+        "imagen": "/img/img3.jpg"
       }
     ]
   },
@@ -37,7 +37,7 @@
         "titulo": "Explora Bangkok y sus templos",
         "precio": "399,00",
         "aventura": "Quads",
-        "imagen": "public/img/img2.jpg"
+        "imagen": "/img/img2.jpg"
       },
       {
         "id": "007",
@@ -45,7 +45,7 @@
         "titulo": "Luces y tradición en Tokio",
         "precio": "450,00",
         "aventura": "quads",
-        "imagen": "public/img/img1.jpg"
+        "imagen": "/img/img1.jpg"
       },
       {
         "id": "010",
@@ -53,7 +53,7 @@
         "titulo": "Relajación y surf en Bali",
         "precio": "520,00",
         "aventura": "Surf",
-        "imagen": "public/img/img3.jpg"
+        "imagen": "/img/img3.jpg"
       },
       {
         "id": "011",
@@ -61,7 +61,7 @@
         "titulo": "Cultura y sabores en Vietnam",
         "precio": "370,00",
         "aventura": "quads",
-        "imagen": "public/img/img4.jpg"
+        "imagen": "/img/img4.jpg"
       },
       {
         "id": "012",
@@ -69,7 +69,7 @@
         "titulo": "Tradición y modernidad en Corea",
         "precio": "495,00",
         "aventura": "quads",
-        "imagen": "public/img/img2.jpg"
+        "imagen": "/img/img2.jpg"
       },
       {
         "id": "013",
@@ -77,7 +77,7 @@
         "titulo": "Descubre la India auténtica",
         "precio": "430,00",
         "aventura": "quads",
-        "imagen": "public/img/img1.jpg"
+        "imagen": "/img/img1.jpg"
       }
     ]
   }
