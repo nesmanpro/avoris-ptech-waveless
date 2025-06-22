@@ -57,6 +57,7 @@
             position: relative;
 
 
+
             .text-container {
                 position: absolute;
                 inset: 0;
@@ -91,6 +92,7 @@
         }
 
         .carousel__slider {
+            width: 100%;
             height: inherit;
             display: inline-flex;
             overflow-y: hidden;

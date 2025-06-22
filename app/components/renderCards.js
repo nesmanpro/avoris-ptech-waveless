@@ -75,8 +75,10 @@ function renderCardsGrid(cards) {
 
           <footer class="card__footer">
             <div class="card-footer__summary">
+            <div>
               <small>Desde</small>
               <p class="price">${place.precio} €</p>
+            </div>
               <span><p>Ver desglose</p> <sup>&#8964;</sup></span>
             </div>
             <button class="card-button">Reservar</button>
