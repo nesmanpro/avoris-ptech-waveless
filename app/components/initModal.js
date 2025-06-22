@@ -34,11 +34,12 @@ export function renderSummaryModal(cardElement, cardData) {
     modal.style.top = '0px';
     modal.style.left = '0px';
 
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 601) {
 
         modal.style.top = 0;
         modal.style.left = 0;
         modal.style.maxWidth = '100%';
+
     } else {
 
         if (left + modalRect.width > window.innerWidth) {
