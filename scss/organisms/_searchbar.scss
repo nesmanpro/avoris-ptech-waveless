@@ -120,11 +120,11 @@
                                 width: 22px;
                                 height: 22px;
                                 transition: background-color 0.3s ease;
-                                background-image: url(../../assets/icons/empty.svg);
+                                background-image: url(./public/icons/empty.svg);
                             }
 
                             input:checked+.custom-checkbox {
-                                background-image: url(../../assets/icons/checked.svg);
+                                background-image: url(./public/icons/checked.svg);
 
                             }
 
